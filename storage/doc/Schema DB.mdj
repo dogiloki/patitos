@@ -1837,7 +1837,8 @@
 							},
 							"name": "date_end",
 							"type": "DATETIME",
-							"length": 0
+							"length": 0,
+							"nullable": true
 						}
 					]
 				},
@@ -2059,7 +2060,8 @@
 							},
 							"name": "date_end",
 							"type": "DATE",
-							"length": 0
+							"length": 0,
+							"nullable": true
 						}
 					]
 				},

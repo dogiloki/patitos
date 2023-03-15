@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('id_employee')->unsigned();
             $table->date('date_start');
-            $table->date('date_end');
+            $table->date('date_end')->nullable();
             $table->timestamps();
             $table->foreign('id_employee')->references('id')->on('employee');
         });

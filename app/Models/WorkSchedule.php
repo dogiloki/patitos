@@ -10,4 +10,8 @@ class WorkSchedule extends Model{
 
     protected $table="work_schedule";
 
+    public function employees(){
+        return $this->hasMany(Employee::class);
+    }
+
 }

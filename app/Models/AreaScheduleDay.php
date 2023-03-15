@@ -10,4 +10,16 @@ class AreaScheduleDay extends Model{
 
     protected $table="area_schedule_day";
 
+    public function employees(){
+        return $this->belongsToMany(Employee::class);
+    }
+
+    public function scheduleDays(){
+        return $this->belongsToMany(ScheduleDay::class);
+    }
+
+    public function areas(){
+        return $this->belongsToMany(Area::class);
+    }
+
 }

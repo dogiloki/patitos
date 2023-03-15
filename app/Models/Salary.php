@@ -9,5 +9,9 @@ class Salary extends Model{
     use HasFactory;
 
     protected $table="salary";
+
+    public function employees(){
+        return $this->hasMany(Employee::class);
+    }
     
 }

@@ -10,4 +10,8 @@ class Role extends Model{
 
     protected $table="role";
 
+    public function employees(){
+        return $this->hasMany(Employee::class);
+    }
+
 }

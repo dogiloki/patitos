@@ -10,4 +10,8 @@ class HolidaySchedule extends Model{
 
     protected $table="holiday_schedule";
 
+    public function employees(){
+        return $this->belongsToMany(Employee::class);
+    }
+
 }

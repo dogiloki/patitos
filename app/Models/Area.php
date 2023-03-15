@@ -10,4 +10,8 @@ class Area extends Model{
 
     protected $table="area";
 
+    public function areaScheduleDays(){
+        return $this->hasMany(AreaScheduleDay::class);
+    }
+
 }

@@ -40,11 +40,11 @@ class EmployeeController{
     public function store(Request $request){
         try{
             $validator=Validator::make($request->all(),[
-                'name'=>'required',
-                'surname'=>'required',
-                'ns'=>['required','unique:employee'],
-                'id_role'=>'required',
-                'id_salary'=>'required'
+                'name'=>['required','max:64'],
+                'surname'=>['required','max:64'],
+                'ns'=>['required','unique:employee','max:16'],
+                'id_role'=>['required'],
+                'id_salary'=>['required'],
             ]);
             if($validator->fails()){
                 return response()->json($validator->errors(),400);
@@ -63,7 +63,9 @@ class EmployeeController{
                 return response()->json(['error'=>'No se ha encontrado el empleado'],404);
             }
             $validator=Validator::make($request->all(),[
-                'ns'=>['unique:employee']
+                'name'=>['max:64'],
+                'surname'=>['max:64'],
+                'ns'=>['unique:employee','max:16'],
             ]);
             if($validator->fails()){
                 return response()->json($validator->errors(),400);

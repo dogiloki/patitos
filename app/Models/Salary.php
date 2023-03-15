@@ -10,6 +10,12 @@ class Salary extends Model{
 
     protected $table="salary";
 
+    protected $fillable=[
+        'amount',
+        'currency',
+        'period'
+    ];
+
     public function employees(){
         return $this->hasMany(Employee::class);
     }

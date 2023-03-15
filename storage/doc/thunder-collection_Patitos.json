@@ -1,0 +1,192 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Patitos",
+    "dateExported": "2023-03-15T21:28:10.462Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "17218b9c-8aa2-43ee-be37-604f8b99df11",
+            "name": "Empleados",
+            "containerId": "",
+            "created": "2023-03-15T16:17:01.442Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b0ad92fb-6d26-48d2-8c29-9fce8e8734d0",
+            "name": "Salario",
+            "containerId": "",
+            "created": "2023-03-15T21:00:05.476Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5f378e7b-1a67-481e-b7fc-03f35d4d7c2a",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "17218b9c-8aa2-43ee-be37-604f8b99df11",
+            "name": "Obtener",
+            "url": "http://localhost:8000/api/employees?paginate=2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-15T16:19:01.522Z",
+            "modified": "2023-03-15T20:51:03.474Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "paginate",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9e44a25a-6214-4c52-b0a1-bc5fd3c1dea4",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "b0ad92fb-6d26-48d2-8c29-9fce8e8734d0",
+            "name": "Obtener",
+            "url": "http://localhost:8000/api/salaries/8",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-15T21:00:05.476Z",
+            "modified": "2023-03-15T21:02:08.727Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e01ed27d-112b-4b47-960c-36b6d52afffa",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "17218b9c-8aa2-43ee-be37-604f8b99df11",
+            "name": "Almacenar",
+            "url": "http://localhost:8000/api/employee",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-15T17:00:47.706Z",
+            "modified": "2023-03-15T19:54:10.018Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Julio\",\r\n  \"surname\": \"Villanueva\",\r\n  \"ns\": \"123456789\",\r\n  \"id_role\": 22,\r\n  \"id_salary\": 12\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "500ee252-0ce3-4d9f-b9c0-1c67452e272c",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "b0ad92fb-6d26-48d2-8c29-9fce8e8734d0",
+            "name": "Almacenar",
+            "url": "http://localhost:8000/api/salary",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-15T21:00:05.477Z",
+            "modified": "2023-03-15T21:23:48.075Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"amount\":1000,\n  \"currency\":\"MXN\",\n  \"period\":\"semanal\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "387f30cc-76c5-4baf-b499-e7ca8807a0d3",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "17218b9c-8aa2-43ee-be37-604f8b99df11",
+            "name": "Actualizar",
+            "url": "http://localhost:8000/api/employee/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-03-15T17:22:46.369Z",
+            "modified": "2023-03-15T20:02:33.914Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Julio2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "410a63bc-3882-4a7c-a9be-5f6207f45fb5",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "b0ad92fb-6d26-48d2-8c29-9fce8e8734d0",
+            "name": "Actualizar",
+            "url": "http://localhost:8000/api/salary/41",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-03-15T21:00:05.478Z",
+            "modified": "2023-03-15T21:27:29.009Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"amount\":10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a912ed03-69c0-4320-9e31-ab78138c3f64",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "17218b9c-8aa2-43ee-be37-604f8b99df11",
+            "name": "Eliminar",
+            "url": "http://localhost:8000/api/employee/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-03-15T17:41:59.016Z",
+            "modified": "2023-03-15T20:08:37.844Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ca4c748c-000f-40ba-af27-4e27e210f38a",
+            "colId": "fa5aec89-a399-4fa0-9879-2b1ec12995c9",
+            "containerId": "b0ad92fb-6d26-48d2-8c29-9fce8e8734d0",
+            "name": "Eliminar",
+            "url": "http://localhost:8000/api/salary/6",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-03-15T21:00:05.479Z",
+            "modified": "2023-03-15T21:27:59.685Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

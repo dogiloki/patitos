@@ -12,13 +12,18 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+    public function run(){
+        try{
+            \App\Models\Salary::factory()->count(40)->create();
+            \App\Models\Role::factory()->count(40)->create();
+            \App\Models\Employee::factory()->count(40)->create();
+            \App\Models\HolidaySchedule::factory()->count(40)->create();
+            \App\Models\WorkSchedule::factory()->count(40)->create();
+            \App\Models\ScheduleDay::factory()->count(40)->create();
+            \App\Models\Area::factory()->count(10)->create();
+            \App\Models\AreaScheduleDay::factory()->count(40)->create();
+        }catch(\Exception $e){
+            echo $e->getMessage();
+        }
     }
 }

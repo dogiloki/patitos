@@ -10,6 +10,14 @@ class Employee extends Model {
 
     protected $table="employee";
 
+    protected $fillable=[
+        'name',
+        'surname',
+        'ns',
+        'id_role',
+        "id_salary"
+    ];
+
     public function role(){
         return $this->belongsTo(Role::class);
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->double('amount',8,2);
             $table->enum('currency',['MXN','USD']);
-            $table->enum('type',['semanal','quincenal','mensual']);
+            $table->enum('period',['semanal','quincenal','mensual']);
             $table->timestamps();
         });
     }

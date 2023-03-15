@@ -1,12 +1,7 @@
 ## Empleados GET
 
-| Header key   | Valor               |
-|------------------------------------|
-| Content-Type | application/json    |
-
-| Método  | URL                      | Descripción                                                                                      |
-|------------------------------------|--------------------------------------------------------------------------------------------------|
-| GET     | /api/employees/1?page=1  | Obtener información de uno o varios empleados. Si no se envía parametro obtiene de 10 en 10      |
+Obtener información de uno o varios empleados. Si no se envía parametro obtiene de 10 en 10 
+`/api/employees/1?page=1`
 
 **Parámetros JSON(opcionales) incluir solo un parámetro para la obtener la información del empleado(s)**
 ```json

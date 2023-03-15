@@ -1,12 +1,7 @@
 ## Empleados DELETE
 
-| Header key   | Valor               |
-|------------------------------------|
-| Content-Type | application/json    |
-
-| Método  | URL                      | Descripción                                                                                      |
-|------------------------------------|--------------------------------------------------------------------------------------------------|
-| POST     | /api/employee/2         | Eliminar empleado                                                                                |
+Eliminar empleado
+`/api/employee/2`
 
 **Parámetros JSON incluir los parámetros a actualizar**
 ```json

@@ -1,12 +1,7 @@
 ## Empleados POST
 
-| Header key   | Valor               |
-|------------------------------------|
-| Content-Type | application/json    |
-
-| Método  | URL                      | Descripción                                                                                      |
-|------------------------------------|--------------------------------------------------------------------------------------------------|
-| POST     | /api/employee           | Registrar empleado                                                                               |
+Registrar empleado
+`/api/employee`
 
 **Parámetros JSON**
 ```json

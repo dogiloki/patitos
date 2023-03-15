@@ -1,4 +1,4 @@
-# API para empresa de patitos de hula
+# API para empresa de patitos de hule
 
 **URL principal**
 
@@ -10,6 +10,12 @@
     - [POST](readme/employee/post.md)
     - [PUT](readme/employee/put.md)
     - [DELETE](readme/employee/delete.md)
+
+**Encabezado en la peticiones**
+
+| Header key   | Valor               |
+|------------------------------------|
+| Content-Type | application/json    |
 
 **Respuesta código**
 

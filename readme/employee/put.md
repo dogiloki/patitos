@@ -1,12 +1,7 @@
 ## Empleados PUT
 
-| Header key   | Valor               |
-|------------------------------------|
-| Content-Type | application/json    |
-
-| Método  | URL                      | Descripción                                                                                      |
-|------------------------------------|--------------------------------------------------------------------------------------------------|
-| POST     | /api/employee/2         | Actualizar información del empleado                                                              |
+Actualizar información del empleado
+`/api/employee/2 `
 
 **Parámetros JSON incluir los parámetros a actualizar**
 ```json

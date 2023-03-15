@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name',64);
             $table->string('surname',64);
-            $table->string('ns',16);
+            $table->string('ns',16)->unique();
             $table->bigInteger('id_role')->unsigned();
             $table->bigInteger('id_salary')->unsigned();
             $table->timestamps();

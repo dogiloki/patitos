@@ -1,5 +1,8 @@
 # API para empresa de patitos de hule
 
+Julio César VIllanueva Ontiveros - 1321124088<br>
+Cesar Alejandro Camacho Nava - 1321124329<br>
+
 **URL principal**
 
 [https://patitos-production.up.railway.app](https://patitos-production.up.railway.app)

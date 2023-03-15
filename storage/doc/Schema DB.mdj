@@ -281,7 +281,7 @@
 									"top": 85,
 									"width": 194,
 									"height": 13,
-									"text": "assistance"
+									"text": "work_schedule"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -505,7 +505,7 @@
 									"font": "Arial;13;1",
 									"left": 56,
 									"top": 501,
-									"width": 320,
+									"width": 328,
 									"height": 13,
 									"text": "salary"
 								},
@@ -531,7 +531,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 524,
-											"width": 310,
+											"width": 318,
 											"height": 13
 										},
 										{
@@ -546,7 +546,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 539,
-											"width": 310,
+											"width": 318,
 											"height": 13
 										},
 										{
@@ -558,25 +558,56 @@
 											"model": {
 												"$ref": "AAAAAAGG49VYmPGAkQU="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 554,
-											"width": 310,
+											"width": 318,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGG4+1l2fM49xI=",
+											"_parent": {
+												"$ref": "AAAAAAGG49U9MvFrI+A="
+											},
+											"model": {
+												"$ref": "AAAAAAGG4+1lzfM1tQA="
+											},
+											"font": "Arial;13;0",
+											"left": 61,
+											"top": 554,
+											"width": 318,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGG4+/Qh/NCeqo=",
+											"_parent": {
+												"$ref": "AAAAAAGG49U9MvFrI+A="
+											},
+											"model": {
+												"$ref": "AAAAAAGG4+/QgPM/EIU="
+											},
+											"font": "Arial;13;0",
+											"left": 61,
+											"top": 569,
+											"width": 318,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 519,
-									"width": 320,
-									"height": 53
+									"width": 328,
+									"height": 68
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 56,
 							"top": 496,
-							"width": 320,
-							"height": 76,
+							"width": 328,
+							"height": 91,
 							"nameLabel": {
 								"$ref": "AAAAAAGG49U9MvFqkVQ="
 							},
@@ -1764,7 +1795,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGG49HK3vCw48g="
 					},
-					"name": "assistance",
+					"name": "work_schedule",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -1918,7 +1949,7 @@
 							},
 							"name": "amount",
 							"type": "DOUBLE",
-							"length": 0
+							"length": "8,2"
 						},
 						{
 							"_type": "ERDColumn",
@@ -1928,6 +1959,25 @@
 							},
 							"name": "type",
 							"type": "ENUM(semanal,quincenal,mensual)"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGG4+1lzfM1tQA=",
+							"_parent": {
+								"$ref": "AAAAAAGG49U9MfFnF1s="
+							},
+							"name": "currency",
+							"type": "ENUM(MXN,USD)"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGG4+/QgPM/EIU=",
+							"_parent": {
+								"$ref": "AAAAAAGG49U9MfFnF1s="
+							},
+							"name": "type",
+							"type": "ENUM(semanal,quincenal,mensual)",
+							"length": 0
 						}
 					]
 				},

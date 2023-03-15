@@ -1975,7 +1975,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGG49U9MfFnF1s="
 							},
-							"name": "type",
+							"name": "period",
 							"type": "ENUM(semanal,quincenal,mensual)",
 							"length": 0
 						}

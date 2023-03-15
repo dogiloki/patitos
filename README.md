@@ -6,10 +6,10 @@
 
 **Peticiones HTTP a la API**
 - Empleados
-    - [GET](blob/main/readme/employee/get.md)
-    - [POST](blob/main/readme/employee/post.md)
-    - [PUT](blob/main/readme/employee/put.md)
-    - [DELETE](blob/main/readme/employee/delete.md)
+    - [GET](readme/employee/get.md)
+    - [POST](readme/employee/post.md)
+    - [PUT](readme/employee/put.md)
+    - [DELETE](readme/employee/delete.md)
 
 **Respuesta código**
 

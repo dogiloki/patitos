@@ -20,7 +20,7 @@ class EmployeeController{
             $employees=[];
             $json=$request->json()->all();
             if(count($json)==0){
-                return response()->json(Employee::paginate(10),200);
+                return response()->json(Employee::paginate($request->paginate??10),200);
             }
             foreach($json as $key=>$value){
                 $employee=Employee::where($key,$value)->get();

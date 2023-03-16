@@ -2,6 +2,7 @@
 
 Julio César VIllanueva Ontiveros - 1321124088<br>
 Cesar Alejandro Camacho Nava - 1321124329<br>
+Alcantar Chavez Rafael - 1321124234<br>
 
 **URL principal**
 
@@ -17,7 +18,7 @@ Cesar Alejandro Camacho Nava - 1321124329<br>
 **Encabezado en la peticiones**
 
 | Header key   | Valor               |
-|------------------------------------|
+|--------------|---------------------|
 | Content-Type | application/json    |
 
 **Respuesta código**

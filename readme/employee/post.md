@@ -1,28 +1,24 @@
-## Empleados POST
+## Salarios POST
 
-Registrar empleado
-`/api/employee`
+Registrar salario
+`/api/salary`
 
 **Parámetros JSON**
 ```json
 {
-  "name": "Julio",
-  "surname": "Villanueva",
-  "ns": "123456789",
-  "id_role": 22,
-  "id_salary": 12
+  "amount": 1000,
+  "currency": "MNX",
+  "period": "semanal",
 }
 ```
 **Respuesta JSON**
 ```json
 {
-  "name": "Julio",
-  "surname": "Villanueva",
-  "ns": "123456789",
-  "id_role": 22,
-  "id_salary": 12,
-  "updated_at": "2023-03-15T19:54:09.000000Z",
-  "created_at": "2023-03-15T19:54:09.000000Z",
-  "id": 45
+  "amount": 1000,
+  "currency": "MNX",
+  "period": "semanal",
+  "created_at": "2023-03-15T17:08:31.000000Z",
+  "updated_at": "2023-03-15T17:08:31.000000Z",
+  "id": 43
 }
 ```

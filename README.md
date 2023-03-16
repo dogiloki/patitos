@@ -35,4 +35,4 @@ Alcantar Chavez Rafael - 1321124234<br>
 | 201    | Registro almacenado con éxito                                       |
 | 204    | Registro eliminado con éxito                                        |
 | 404    | Recurso no encontrado (ruta o registro)                             |
-| 500    | Error en el servidor, o error en consultas con restricción de datos |
+| 500    | Error en el servidor o error en consultas por restricción de datos  |

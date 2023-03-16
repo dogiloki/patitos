@@ -15,6 +15,12 @@ Alcantar Chavez Rafael - 1321124234<br>
     - [PUT](readme/employee/put.md)
     - [DELETE](readme/employee/delete.md)
 
+- Salarios
+    - [GET](readme/salary/get.md)
+    - [POST](readme/salary/post.md)
+    - [PUT](readme/salary/put.md)
+    - [DELETE](readme/salary/delete.md)
+
 **Encabezado en la peticiones**
 
 | Header key   | Valor               |
